@@ -1,0 +1,19 @@
+#include<iostream>
+ using namespace std;
+ int main()
+ {
+ 	cout<<"even odd program"<<endl;
+ 	cout<<"enter a number"<<endl;
+ 	int num;
+ 	cin>>num;
+ 	if(num%2==0){
+ 		cout<<"The number" <<num<<"is a even number"<<endl;
+	 }
+	 else
+	 {
+	 	cout<<" The number" <<num<<"is a odd number"<<endl;
+	 	
+	 }
+	 
+	 return 0;
+ }
