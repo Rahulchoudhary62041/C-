@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main (){
+    float m1,m2,m3,m4,m5,total,per;
+    cout <<"enter marks of sub 1:";
+    cin >>m1;
+    cout <<"enter marks of sub 2:";
+    cin >>m2;
+    cout <<"enter marks of sub 3:";
+    cin >>m3;
+    cout <<"enter marks of sub 4:";
+    cin >> m4;
+    cout <<"enter marks od sub 5:";
+    cin >> m5;
+    total = m1+m2+m3+m4+m5;
+    per =total/5;
+    cout <<"\n total percentage is:" <<per;
+    cout << "\n totalmarks is :"<<per;
+    cout << "%";
+    return 0;
+    
+    
+}
