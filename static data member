@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+class Test {
+   public:
+      static int count;  // Declare static data member
+      Test() {
+         count++;  // Increment the static data member
+      }
+};
+
+// Define static data member
+int Test::count = 0;
+
+int main() {
+   Test t1, t2, t3;  // Create objects of Test
+   cout << "Number of objects created: " << Test::count << endl;
+   return 0;
+}
