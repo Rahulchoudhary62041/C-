@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Student {
+  private:
+    string name;
+    int age;
+    char grade;
+  public:
+    // Constructor with three parameters
+    Student(string n, int a, char g) {
+      name = n;
+      age = a;
+      grade = g;
+      cout << "Student object created.\n";
+    }
+
+    // Destructor
+    ~Student() {
+      cout << "Student object destroyed.\n";
+    }
+
+    // A member function to display the data
+    void display() {
+      cout << "Name: " << name << "\n";
+      cout << "Age: " << age << "\n";
+      cout << "Grade: " << grade << "\n";
+    }
+};
+
+int main() {
+  // Creating an object of Student class
+  Student s1("Alice", 18, 'A');
+
+  // Calling the display function
+  s1.display();
+
+  // The object is automatically destroyed when the scope ends
+  return 0;
+}
