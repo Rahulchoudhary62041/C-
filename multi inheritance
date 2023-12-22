@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+// base class 1
+class Mammal {
+  public:
+    void breathe() {
+      cout << "Mammals breathe through lungs." << endl;
+    }
+};
+
+// base class 2
+class WingedAnimal {
+  public:
+    void flap() {
+      cout << "Winged animals can flap their wings." << endl;
+    }
+};
+
+// derived class
+class Bat : public Mammal, public WingedAnimal {
+  public:
+    void echo() {
+      cout << "Bats use echolocation." << endl;
+    }
+};
+
+int main() {
+  // create an object of derived class
+  Bat b;
+
+  // call methods of base classes
+  b.breathe();
+  b.flap();
+
+  // call method of derived class
+  b.echo();
+
+  return 0;
+}
