@@ -1,0 +1,22 @@
+#include <iostream>
+
+// Function to find GCD using recursion
+int findGCD(int a, int b) {
+    if (b == 0) {
+        return a;
+    } else {
+        return findGCD(b, a % b);
+    }
+}
+
+int main() {
+    // Input: two numbers for which GCD needs to be found
+    int num1, num2;
+    std::cout << "Enter two positive integers: ";
+    std::cin >> num1 >> num2;
+
+    // Finding and displaying the GCD
+    std::cout << "GCD of " << num1 << " and " << num2 << " is: " << findGCD(num1, num2) << std::endl;
+
+    return 0;
+}
