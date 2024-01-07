@@ -1,0 +1,14 @@
+#include <iostream>
+#include <iomanip>
+
+int main() {
+    // Input: the decimal number to be converted
+    int decimalNumber;
+    std::cout << "Enter the decimal number: ";
+    std::cin >> decimalNumber;
+
+    // Converting decimal to hexadecimal
+    std::cout << "Hexadecimal representation: 0x" << std::hex << std::uppercase << decimalNumber << std::endl;
+
+    return 0;
+}
