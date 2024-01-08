@@ -1,0 +1,28 @@
+#include <iostream>
+
+class MyClass {
+public:
+    // Constructor
+    MyClass() {
+        std::cout << "Constructor called\n";
+    }
+
+    // Parameterized Constructor
+    MyClass(int value) {
+        std::cout << "Parameterized Constructor called with value: " << value << "\n";
+    }
+
+    // Destructor
+    ~MyClass() {
+        std::cout << "Destructor called\n";
+    }
+};
+
+int main() {
+    // Creating objects and observing constructor and destructor calls
+    MyClass obj1;                    // Calls default constructor
+    MyClass obj2(42);                // Calls parameterized constructor
+
+    // Destructor is automatically called when objects go out of scope
+    return 0;
+}
