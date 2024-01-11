@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+
+class Person {
+  protected:
+    string name;
+  public:
+    Person (const string& name) : name (name) { }
+    void display () {
+      cout << "\nName: " << name << endl;
+    }
+};
+
+class Employee : public Person {
+  protected:
+    int employeeId;
+  public:
+    Employee (const string& name, int id) : Person (name) , employeeId (id) { }
+    void displayEmployee () {
+      display ();
+      cout << "Employee ID: " << employeeId << endl;
+    }
+};
+
+class Student : public Person {
+  protected:
+    int rollNo;
+  public:
+    Student (const string& name, int roll) : Person (name) , rollNo (roll) { }
+    void displayStudent () {
+      display ();
+      cout << "Roll No: " << rollNo << endl;
+    }
+};
+
+class PartTimeStudent : public Employee, public Student {
+  protected:
+    int hours;
+  public:
+    PartTimeStudent (const string& name, int id, int roll, int hours) : Employee (name, id) , Student (name, roll) , hours (hours) { }
+    void displayPartTimeStudent () {
+      displayEmployee ();
+      displayStudent ();
+      cout << "Working Hours: " << hours << endl;
+    }
+};
+
+int main () {
+  PartTimeStudent pts ("Raj", 101, 25, 4);
+  pts.displayPartTimeStudent ();
+  return 0;
+}
