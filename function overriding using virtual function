@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+class Shape {
+   public:
+      virtual int area() {
+         cout << "Parent class area :" << endl;
+         return 0;
+      }
+};
+
+class Rectangle: public Shape {
+   public:
+      int area () {
+         cout << "Rectangle class area :" << endl;
+         return (width * height);
+      }
+};
+
+int main() {
+   Shape *shape;
+   Rectangle rec;
+
+   shape = &rec;
+
+   // call rectangle area.
+   shape->area();
+
+   return 0;
+}
