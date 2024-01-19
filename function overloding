@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+class Overload {
+   public:
+      void print(int i) {
+         cout << "Printing integer: " << i << endl;
+      }
+
+      void print(double  f) {
+         cout << "Printing float: " << f << endl;
+      }
+
+      void print(char* c) {
+         cout << "Printing character: " << c << endl;
+      }
+};
+
+int main() {
+   Overload obj;
+
+   obj.print(10);
+   obj.print(10.10);
+   obj.print("ten");
+
+   return 0;
+}
