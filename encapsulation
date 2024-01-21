@@ -1,0 +1,28 @@
+// Program to demonstrate encapsulation in C++
+#include <iostream>
+using namespace std;
+
+// A class to represent a bank account
+class BankAccount {
+  private:
+    // Data members
+    string owner;
+    double balance;
+    double interestRate;
+
+  public:
+    // Constructor to initialize data members
+    BankAccount(string name, double initialBalance, double rate) {
+      owner = name;
+      balance = initialBalance;
+      interestRate = rate;
+    }
+
+    // A function to deposit money into the account
+    void deposit(double amount) {
+      balance += amount;
+      cout << "Deposited " << amount << " into the account.\n";
+    }
+
+    // A function to withdraw money from the account
+    void withdraw
