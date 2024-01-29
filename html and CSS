@@ -1,0 +1,592 @@
+Design a web page for a “Login” as shown below using HTML and CSS Code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+body {
+font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0;
+padding: 0; display: flex;
+align-items: center; justify-content: center; height: 100vh;
+}
+
+.login-container { background-color: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); padding: 20px;
+border-radius: 8px; width: 300px;
+text-align: center;
+}
+
+.login-container h2 { color: #333;
+}
+
+.login-form {
+margin-top: 20px;
+}
+
+.form-group {
+margin-bottom: 15px;
+}
+
+.form-group label { display: block;
+ 
+font-size: 14px; margin-bottom: 5px; color: #555;
+}
+
+.form-group input { width: 100%; padding: 8px;
+box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;
+}
+
+.form-group button { background-color: #4caf50; color: #fff;
+padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;
+}
+
+.form-group button:hover { background-color: #45a049;
+}
+</style>
+</head>
+<body>
+<div class="login-container">
+<h2>Login</h2>
+<form class="login-form">
+<div class="form-group">
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" required>
+</div>
+<div class="form-group">
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required>
+</div>
+<div class="form-group">
+<button type="submit">Login</button>
+</div>
+</form>
+</div>
+</body>
+</html>
+ 
+Program 2
+
+Design a web page for a “Contact Us” form as shown below using HTML and CSS Code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<style>
+
+
+.contact-container { background-color: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); padding: 20px;
+border-radius: 8px; width: 400px;
+text-align: center;
+}
+
+.contact-container h2 { color: #333;
+}
+
+.contact-form { margin-top: 20px;
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+.form-group label { display: block; font-size: 14px;
+margin-bottom: 5px; color: #555;
+}
+
+.form-group input,
+.form-group textarea { width: 100%;
+ 
+padding: 8px;
+box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;
+}
+
+.form-group textarea { resize: vertical;
+}
+
+.form-group button { background-color: #4caf50; color: #fff;
+padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;
+}
+
+.form-group button:hover { background-color: #45a049;
+}
+</style>
+</head>
+<body>
+<div class="contact-container">
+<h2>Contact Us</h2>
+<form class="contact-form">
+<div class="form-group">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+</div>
+<div class="form-group">
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+</div>
+<div class="form-group">
+<label for="message">Message:</label>
+<textarea id="message" name="message" rows="4" required></textarea>
+</div>
+<div class="form-group">
+<button type="submit">Submit</button>
+</div>
+</form>
+</div></body></html>
+ 
+Program 3
+
+Design a web page for a “Sign up” page as shown below using HTML and CSS Code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+<style>
+body {
+font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0;
+padding: 0; display: flex;
+align-items: center; justify-content: center; height: 100vh;
+}
+
+.signup-container { background-color: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); padding: 20px;
+border-radius: 8px; width: 400px;
+text-align: center;
+}
+
+.signup-container h2 { color: #333;
+}
+
+.signup-form { margin-top: 20px;
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+.form-group label {
+ 
+display: block; font-size: 14px;
+margin-bottom: 5px; color: #555;
+}
+
+.form-group input { width: 100%; padding: 8px;
+box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;
+}
+
+.form-group button { background-color: #4caf50; color: #fff;
+padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;
+}
+
+.form-group button:hover { background-color: #45a049;
+}
+
+.form-group .login-link { font-size: 14px; color: #007bff;
+text-decoration: none; display: inline-block; margin-top: 10px;
+}
+
+.form-group .login-link:hover { text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<div class="signup-container">
+<h2>Sign Up</h2>
+<form class="signup-form">
+<div class="form-group">
+<label for="username">Username:</label>
+ 
+<input type="text" id="username" name="username" required>
+</div>
+<div class="form-group">
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+</div>
+<div class="form-group">
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required>
+</div>
+<div class="form-group">
+<button type="submit">Sign Up</button>
+</div>
+<div class="form-group">
+<span class="login-link">Already have an account? <a href="#">Log in</a></span>
+</div>
+</form>
+</div>
+</body>
+</html>
+ 
+Program 4
+
+Design a web page “Simple Calculator” for adding two numbers using HTML, CSS, Javascript and DOM.
+
+Code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Calculator</title>
+<style>
+body {
+font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0;
+padding: 0; display: flex;
+align-items: center; justify-content: center; height: 100vh;
+}
+
+.calculator-container { background-color: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); padding: 20px;
+border-radius: 8px; text-align: center;
+}
+
+.calculator-container h2 { color: #333;
+}
+
+.calculator-form { margin-top: 20px;
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+.form-group input {
+ 
+width: 100%; padding: 8px;
+box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;
+}
+
+.form-group button { background-color: #4caf50; color: #fff;
+padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;
+}
+
+.form-group button:hover { background-color: #45a049;
+}
+
+.result {
+font-size: 24px; margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<div class="calculator-container">
+<h2>Simple Calculator</h2>
+<form class="calculator-form">
+<div class="form-group">
+<label for="num1">Number 1:</label>
+<input type="number" id="num1" name="num1" required>
+</div>
+<div class="form-group">
+<label for="num2">Number 2:</label>
+<input type="number" id="num2" name="num2" required>
+</div>
+<div class="form-group">
+<button type="button" onclick="calculate()">Add</button>
+</div>
+</form>
+<div class="result" id="result"></div>
+</div>
+
+<script>
+ 
+function calculate() {
+var num1 = parseFloat(document.getElementById('num1').value); var num2 = parseFloat(document.getElementById('num2').value);
+
+if (!isNaN(num1) && !isNaN(num2)) { var sum = num1 + num2;
+document.getElementById('result').innerHTML = 'Result: ' + sum;
+} else {
+document.getElementById('result').innerHTML = 'Please enter valid numbers.';
+}
+}
+</script>
+</body>
+</html>
+ 
+Program 5
+
+Design a web page to calculate “Simple Interest” using HTML, CSS, Javascript and DOM.
+
+Code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Interest Calculator</title>
+<style>
+body {
+font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0;
+padding: 0; display: flex;
+align-items: center; justify-content: center; height: 100vh;
+}
+
+.interest-container { background-color: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); padding: 20px;
+border-radius: 8px; text-align: center;
+}
+
+.interest-container h2 { color: #333;
+}
+
+.interest-form { margin-top: 20px;
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+.form-group input {
+ 
+width: 100%; padding: 8px;
+box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;
+}
+
+.form-group button { background-color: #4caf50; color: #fff;
+padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;
+}
+
+.form-group button:hover { background-color: #45a049;
+}
+
+.result {
+font-size: 24px; margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<div class="interest-container">
+<h2>Simple Interest Calculator</h2>
+<form class="interest-form">
+<div class="form-group">
+<label for="principal">Principal Amount:</label>
+<input type="number" id="principal" name="principal" required>
+</div>
+<div class="form-group">
+<label for="rate">Interest Rate (%):</label>
+<input type="number" id="rate" name="rate" required>
+</div>
+<div class="form-group">
+<label for="time">Time (years):</label>
+<input type="number" id="time" name="time" required>
+</div>
+<div class="form-group">
+<button type="button" onclick="calculateInterest()">Calculate Interest</button>
+</div>
+ 
+</form>
+<div class="result" id="result"></div>
+</div>
+
+<script>
+function calculateInterest() {
+var principal = parseFloat(document.getElementById('principal').value); var rate = parseFloat(document.getElementById('rate').value);
+var time = parseFloat(document.getElementById('time').value);
+
+if (!isNaN(principal) && !isNaN(rate) && !isNaN(time)) { var interest = (principal * rate * time) / 100;
+var totalAmount = principal + interest; document.getElementById('result').innerHTML = 'Simple Interest: ' +
+interest.toFixed(2) + '<br>Total Amount: ' + totalAmount.toFixed(2);
+} else {
+document.getElementById('result').innerHTML = 'Please enter valid numbers.';
+}
+}
+</script>
+</body>
+</html>
+ 
+Program 6
+
+Design a web page for a “Simple Convertor” to convert kilometer to meter using HTML, CSS, Javascript and DOM.
+
+Code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kilometer to Meter Converter</title>
+<style>
+
+.converter-container { background-color: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); padding: 20px;
+border-radius: 8px; text-align: center;
+}
+
+.converter-container h2 { color: #333;
+}
+
+.converter-form { margin-top: 20px;
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+
+.form-group button { background-color: #4caf50; color: #fff;
+padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;
+}
+
+.form-group button:hover {
+ 
+background-color: #45a049;
+}
+
+.result {
+font-size: 24px; margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<div class="converter-container">
+<h2>Kilometer to Meter Converter</h2>
+<form class="converter-form">
+<div class="form-group">
+<label for="kilometers">Enter Kilometers:</label>
+<input type="number" id="kilometers" name="kilometers" required>
+</div>
+<div class="form-group">
+<button type="button" onclick="convert()">Convert</button>
+</div>
+</form>
+<div class="result" id="result"></div>
+</div>
+
+<script>
+function convert() {
+var kilometers = parseFloat(document.getElementById('kilometers').value);
+
+if (!isNaN(kilometers)) {
+var meters = kilometers * 1000; document.getElementById('result').innerHTML = kilometers + ' Kilometers is
+equal to ' + meters + ' Meters.';
+} else {
+document.getElementById('result').innerHTML = 'Please enter a valid number for kilometers.';
+}
+}
+</script>
+</body>
+</html>
+ 
+Program 7
+
+Write a program for Factorial of a non-negative integer in php
+
+Code
+
+<?php
+function calculateFactorial($number) { if ($number < 0) {
+return "Please enter a non-negative integer.";
+} elseif ($number == 0 || $number == 1) { return 1;
+} else {
+$factorial = 1;
+for ($i = 2; $i <= $number; $i++) {
+$factorial *= $i;
+}
+return $factorial;
+}
+}
+
+// Example: Calculate factorial of 5
+$number = 5;
+$result = calculateFactorial($number); echo "The factorial of $number is: $result";
+?>
+ 
+Program 8
+
+Write a program to reverse the digits of an integer in php
+
+Code
+
+<?php
+function reverseDigits($number) { if (!is_int($number)) {
+return "Please enter a valid integer.";
+}
+
+$isNegative = $number < 0;
+$number = abs($number);
+$reversedNumber = 0; while ($number > 0) {
+$digit = $number % 10;
+$reversedNumber = $reversedNumber * 10 + $digit;
+$number = (int)($number / 10);
+}
+
+return $isNegative ? -$reversedNumber : $reversedNumber;
+}
+
+// Example: Reverse the digits of 12345
+$number = 12345;
+$result = reverseDigits($number);
+echo "The reversed digits of $number are: $result";
+?>
+ 
+Program 9
+
+Write a program for finding the sum of its elements of given array in php
+
+Code
+
+<?php
+function findArraySum($array) { if (!is_array($array)) {
+return "Please provide a valid array.";
+}
+
+$sum = 0;
+foreach ($array as $element) {
+// Ensure each element is a numeric value if (!is_numeric($element)) {
+return "Array should contain only numeric values.";
+}
+$sum += $element;
+}
+
+return $sum;
+}
+
+// Example: Find the sum of elements in an array
+$numbers = [1, 2, 3, 4, 5];
+$result = findArraySum($numbers);
+
+if (is_numeric($result)) {
+echo "The sum of elements in the array is: $result";
+} else {
+echo $result;
+}
+?>
+ 
+Program 10
+
+Write program for demonstrating connection to phpmyadmin using php code Code
+<html>
+<head>
+<title>Creating MySQL Table</title>
+</head>
+<body>
+<?php
+$dbhost = 'localhost';
+$dbuser = 'root';
+$dbpass = 'root@123';
+$dbname = 'TUTORIALS';
+$mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+
+if($mysqli→connect_errno ) {
+printf("Connect failed: %s<br />", $mysqli→connect_error); exit();
+}
+printf('Connected successfully.<br />');
+
+$sql = "CREATE TABLE tutorials_tbl( ".
+"tutorial_id INT NOT NULL AUTO_INCREMENT, ". "tutorial_title VARCHAR(100) NOT NULL, ". "tutorial_author VARCHAR(40) NOT NULL, ". "submission_date DATE, ".
+"PRIMARY KEY ( tutorial_id )); "; if ($mysqli→query($sql)) {
+printf("Table tutorials_tbl created successfully.<br />");
+}
+if ($mysqli→errno) {
+printf("Could not create table: %s<br />", $mysqli→error);
+}
+$mysqli→close();
+?>   </body></html>
